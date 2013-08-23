@@ -217,7 +217,7 @@ img {
     -webkit-transform: rotate(-1deg);
 }
 #description {
-    left: 3%px;
+    left: 3%;
     top: 68px;
     z-index: 1;
     transform: rotate(0.35deg);

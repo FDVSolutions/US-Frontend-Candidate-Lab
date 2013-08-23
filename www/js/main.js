@@ -1,18 +1,20 @@
-(function() {
-    var afterConfirmation = function(message){
+(function () {
+    "use strict";
+    var afterConfirmation, onGoing, onSkipping, initialize;
+    afterConfirmation = function (message) {
         $(".feedback").html(message);
         $(".buttons").fadeOut();
     };
 
-    var onGoing = function() {
+    onGoing = function () {
         new Messi("Great! We'll be waiting for you", {
             title: "Confirmed attendance"
         });
         afterConfirmation("See you on October 30th");
     };
 
-    var onSkipping = function(){
-        var callback = function(going){
+    onSkipping = function () {
+        var callback = function (going) {
             afterConfirmation(going ? "You won't regret. See you on October 30th" : "We hope to see you next time");
         };
         Messi.ask("This event is going to be huge, are you sure you don't want to go? There will be cake!", callback, {
@@ -29,8 +31,8 @@
         });
     };
 
-    var initialize = function(){
-        $(document).ready(function() {
+    initialize = function () {
+        $(document).ready(function () {
             $("#going").click(onGoing);
 
             $("#skipping").click(onSkipping);
