@@ -232,7 +232,7 @@ img {
     font-size: 30px;
     margin-bottom: 15px;
 }
-#invitation a {
+#invitation button {
     background-color: #393939;
     color: #fff;
     border-radius: 3px;
@@ -241,8 +241,9 @@ img {
     padding: 15px;
     text-align: center;
     text-decoration: none;
+    border: none;
 }
-#invitation a:hover {
+#invitation button:hover {
     background-color: #f78b36;
 }
 
