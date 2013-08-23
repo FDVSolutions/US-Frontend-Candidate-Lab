@@ -197,18 +197,19 @@ textarea {
 body { 
     background: url(../img/woodgrain.jpg) repeat; 
     font-family: "Helvetica", "Arial", sans-serif;
-    height: 600px; 
-    width: 888px; 
 }
 
 img { 
-    position: fixed;
+    position: relative;
     box-shadow: 2px 2px 5px -2px;
     -moz-box-shadow: 2px 2px 5px -2px;
     -webkit-box-shadow: 2px 2px 5px -2px;
 }
+.deco img{
+    position: fixed;
+}
 #title {
-    left: 20px;
+    left: 2%;
     top: 35px;
     z-index: 2;
     transform: rotate(-1deg);
@@ -216,7 +217,7 @@ img {
     -webkit-transform: rotate(-1deg);
 }
 #description {
-    left: 260px;
+    left: 3%px;
     top: 68px;
     z-index: 1;
     transform: rotate(0.35deg);
@@ -224,29 +225,28 @@ img {
     -webkit-transform: rotate(0.35deg);
 }
 #date {
-    left: 530px;
+    float: right;
+    right: 2%;
     top: 14px;
+    z-index: 3;
     transform: rotate(1.8deg);
     -moz-transform: rotate(1.8deg);
     -webkit-transform: rotate(1.8deg);
 }
-
 #deco-hair{
-    bottom: -2em;
-    left: 50em;
+    bottom: -32px;
+    right: -236px;
     transform: rotate(-14deg);
     -ms-transform: rotate(-14deg);
     -webkit-transform: rotate(-14deg);
 }
-
 #deco-shoe{
-    bottom: -9em;
-    left: 40em;
+    bottom: -144px;
+    right: 50px;
     transform: rotate(1deg);
     -ms-transform: rotate(1deg);
     -webkit-transform: rotate(1deg);
 }
-
 #invitation {
     background-color: #fff;
     background-image: url(../img/white-texture.png);
@@ -255,7 +255,7 @@ img {
     padding: 27px 129px 29px 29px;
     position: absolute;
     width: 579px;
-    z-index: 3;
+    z-index: 4;
     box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
     -webkit-box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
     -moz-box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
@@ -364,5 +364,59 @@ img {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #title {
+        z-index: 1;
+        left: 2%;
+    }
+    #description {
+        z-index: 2;
+        float: right;
+        right: 1%;
+        top: -35px;
+    }
+    #date {
+        float: none;
+        left: 2%;
+        top: -80px;
+    }
+    #invitation{
+        position: relative;
+        width: auto;
+        padding-right: 29px;
+    }
+    #going{
+        margin-bottom: 20px;
+    }
+    #going, #skipping{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 780px)
+{
+    #title {
+        left: 2%;
+    }
+    #description {
+        z-index: 2;
+        float: right;
+        right: 1%;
+        top: 60px;
+    }
+    #date {
+        float: none;
+        display: block;
+        left: 50%;
+        margin-left: -128px;
+    }
+    #invitation{
+        position: relative;
+        width: 80%;
+        padding-right: 59px;
     }
 }
