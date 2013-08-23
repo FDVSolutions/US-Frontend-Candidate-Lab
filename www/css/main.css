@@ -203,20 +203,32 @@ body {
 
 img { 
     position: fixed;
+    box-shadow: 2px 2px 5px -2px;
+    -moz-box-shadow: 2px 2px 5px -2px;
+    -webkit-box-shadow: 2px 2px 5px -2px;
 }
 #title {
-    left: 17px;
-    top: 25px;
+    left: 20px;
+    top: 35px;
     z-index: 2;
+    transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
 }
 #description {
-    left: 259px;
-    top: 67px;
+    left: 260px;
+    top: 68px;
     z-index: 1;
+    transform: rotate(0.35deg);
+    -moz-transform: rotate(0.35deg);
+    -webkit-transform: rotate(0.35deg);
 }
 #date {
-    left: 525px;
-    top: 9px;
+    left: 530px;
+    top: 14px;
+    transform: rotate(1.8deg);
+    -moz-transform: rotate(1.8deg);
+    -webkit-transform: rotate(1.8deg);
 }
 
 #deco-hair{
