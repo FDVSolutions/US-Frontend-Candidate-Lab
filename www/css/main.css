@@ -221,6 +221,7 @@ img {
 
 #invitation {
     background-color: #fff;
+    background-image: url(../img/white-texture.png);
     bottom: 0;
     left: 0;
     padding: 27px 129px 29px 29px;
