@@ -202,7 +202,7 @@ body {
 }
 
 img { 
-    position: absolute; 
+    position: fixed;
 }
 #title {
     left: 17px;
@@ -219,6 +219,22 @@ img {
     top: 9px;
 }
 
+#deco-hair{
+    bottom: -2em;
+    left: 50em;
+    transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+}
+
+#deco-shoe{
+    bottom: -9em;
+    left: 40em;
+    transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+}
+
 #invitation {
     background-color: #fff;
     background-image: url(../img/white-texture.png);
@@ -228,6 +244,9 @@ img {
     position: absolute;
     width: 579px;
     z-index: 3;
+    box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
+    -webkit-box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
+    -moz-box-shadow: -5px 5px 30px -5px gray inset, 3px 0px 12px 0px;
 }
 #invitation h1 {
     font-size: 30px;
